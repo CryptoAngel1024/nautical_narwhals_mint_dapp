@@ -1,0 +1,30 @@
+{
+  "name": "nautical-narwharls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy-rinkeby": "npx hardhat compile && npx hardhat run scripts/deploy.js --network rinkeby",
+    "test-contracts": "node scripts/runTests.js",
+    "react-install": "yarn --cwd frontend install",
+    "react-start": "yarn --cwd frontend start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.7.0",
+    "hardhat-gas-reporter": "^1.0.6"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.0",
+    "dotenv": "^10.0.0"
+  }
+}

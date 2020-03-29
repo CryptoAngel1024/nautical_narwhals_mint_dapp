@@ -1,0 +1,94 @@
+.navigation{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.navigation_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+.social_links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 4;
+    width: max-content;
+    float: right;
+    z-index: 5;
+}
+.social_links button{
+    position: relative;
+    position: relative;
+
+}
+.navigation .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    height: 150px;
+}
+.navigation .logo img{
+    width: 150px;
+}
+.navigation .links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+    padding: 20px 0;
+}
+.navigation .links li a{
+    padding: 0px !important;
+}
+.navigation .links li a,
+.navigation .links li{
+    list-style: none;
+    text-decoration: none;
+    color: #374A55;
+    cursor: pointer;
+    margin: 0 0px;
+    padding: 10px 25px;
+    border: 0px solid #374A55;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.connect_wallet{
+    text-decoration: none;
+    color: #374A55;
+    background: transparent;
+    padding: 8px 20px;
+    border: 1px solid #374A55;
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.social_links a{
+    border: 1px solid #374A55;
+    background: #204353;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-right: 20px;
+    border-radius: 50px;
+}

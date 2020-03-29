@@ -1,0 +1,56 @@
+Arguments: 
+  /home/jove/.nvm/versions/node/v14.18.2/bin/node /home/jove/.nvm/versions/node/v14.18.2/bin/yarn install
+
+PATH: 
+  /home/jove/.nvm/versions/node/v14.18.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Go/bin:/mnt/c/Users/Jove/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Jove/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/e/Utility/Windows terminal:/mnt/c/Users/Jove/go/bin:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "nautical-narwharls",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "deploy-rinkeby": "npx hardhat compile && npx hardhat run scripts/deploy.js --network rinkeby",
+      "test-contracts": "node scripts/runTests.js",
+      "react-install": "yarn --cwd frontend install",
+      "react-start": "yarn --cwd frontend start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.2",
+      "@nomiclabs/hardhat-waffle": "^2.0.1",
+      "chai": "^4.3.4",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.5.1",
+      "hardhat": "^2.7.0",
+      "hardhat-gas-reporter": "^1.0.6"
+    },
+    "dependencies": {
+      "@chainlink/contracts": "^0.2.2",
+      "@openzeppelin/contracts": "^4.4.0",
+      "@openzeppelin/contracts-upgradeable": "^4.4.0",
+      "dotenv": "^10.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
