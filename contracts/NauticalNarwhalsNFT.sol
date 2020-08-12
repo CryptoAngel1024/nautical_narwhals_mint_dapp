@@ -120,6 +120,23 @@ contract NauticalNarwhals is ERC721, Ownable, VRFConsumerBase, ReentrancyGuard {
     return requestRandomness(LINK_KEY_HASH, LINK_FEE);
   }
 
+  function airdrop(address[] memory _users) external onlyOwner nonReentrant{
+    require(_mintedSupply.current() + _users.length <= MAX_SUPPLY, "Not this many tokens left");
+    for(uint256 i = 1; i <= _users.length; i++){
+      _mintedSupply.increment();
+      _safeMint(_users[i-1], _mintedSupply.current());
+    }
+  }
+
+  function withdraw() external onlyOwner {
+    (bool success, ) = payable(owner()).call{value: address(this).balance}("");
+    require(success);
+  }
+
+  function setBaseURI(string calldata _newBaseURI) external onlyOwner { 
+    baseURI = _newBaseURI;
+  }
+
   function setNotRevealedURI(string memory _notRevealedURI) external onlyOwner {
     notRevealedURI = _notRevealedURI;
   }
