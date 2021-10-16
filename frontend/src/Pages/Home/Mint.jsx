@@ -8,18 +8,18 @@ export default function Mint() {
     const incrementCounter = () => setCounter(counter + 1);
     const decrementCounter = () => setCounter(counter - 1);
     const mint = () => alert(counter)
-    // const [
-    //     account,
-    //     provider,
-    //     isPaused,
-    //     isPresale,
-    //     web3provider,
-    //     onConnect,
-    //     resetApp,
-    //     mintedAmount,
-    //     mintPreSale,
-    //     mintPublicSale
-    // ] = useWeb3Integration(counter);
+    const [
+        account,
+        provider,
+        isPaused,
+        isPresale,
+        web3provider,
+        onConnect,
+        resetApp,
+        mintedAmount,
+        mintPreSale,
+        mintPublicSale
+    ] = useWeb3Integration(counter);
 
     return (
         <Section className='mint' id='mint'>
