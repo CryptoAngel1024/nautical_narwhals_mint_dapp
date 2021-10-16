@@ -39,24 +39,24 @@ function useWeb3Integration(mintAmount) {
   });
 
 
-  // const onConnect = useCallback(
-  //   async () => {
-  //     const provider = await web3Modal.connect();
-  //     const web3Provider = new ethers.providers.Web3Provider(provider);
+  const onConnect = useCallback(
+    async () => {
+      const provider = await web3Modal.connect();
+      const web3Provider = new ethers.providers.Web3Provider(provider);
 
-  //     const signer = web3Provider.getSigner()
-  //     const address = await signer.getAddress()
-  //     const network = await web3Provider.getNetwork()
+      const signer = web3Provider.getSigner()
+      const address = await signer.getAddress()
+      const network = await web3Provider.getNetwork()
 
-  //     if (network.chainId !== 4) {
-  //       alert("Please, change to Rinkeby network")
-  //       resetApp()
-  //     }
+      if (network.chainId !== 4) {
+        alert("Please, change to Rinkeby network")
+        resetApp()
+      }
 
-  //     setAccount(address);
-  //     setProvider(provider)
-  //     setWeb3Provider(web3Provider);
-  //   }, [web3Modal]);
+      setAccount(address);
+      setProvider(provider)
+      setWeb3Provider(web3Provider);
+    }, [web3Modal]);
 
   const resetApp = useCallback(
     async () => {
