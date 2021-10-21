@@ -3,13 +3,13 @@ import Web3Modal from 'web3modal';
 import { useState, useEffect, useCallback } from 'react';
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
-// import {
-//   getMintedAmount,
-//   getPaused,
-//   getPresale,
-//   mintPreSale,
-//   mintPublicSale
-// } from '../services/nftContractFunctions';
+import {
+  getMintedAmount,
+  getPaused,
+  getPresale,
+  mintPreSale,
+  mintPublicSale
+} from '../services/nftContractFunctions';
 
 import { INFURA_ID, NETWORK_NAME } from '../config';
 
