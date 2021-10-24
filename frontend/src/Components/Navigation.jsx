@@ -32,12 +32,12 @@ export default function Navigation(props) {
         mintPreSale,
         mintPublicSale
     ] = useWeb3Integration(mintAmount);
-    const mintSection = useScrollSection('mint');
-    const ourvisionSection = useScrollSection('ourvision');
-    const roadmapSection = useScrollSection('roadmap');
-    const ourteamSection = useScrollSection('ourteam');
-    const gallerySection = useScrollSection('gallery');
-    const stackingSection = useScrollSection('staking');
+    // const mintSection = useScrollSection('mint');
+    // const ourvisionSection = useScrollSection('ourvision');
+    // const roadmapSection = useScrollSection('roadmap');
+    // const ourteamSection = useScrollSection('ourteam');
+    // const gallerySection = useScrollSection('gallery');
+    // const stackingSection = useScrollSection('staking');
 
     const location = useLocation();
     const { pathname } = location;
